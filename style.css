@@ -121,9 +121,7 @@ nav a:hover{
 
   border-radius:50%;
 
-  background:
-  url('https://images-assets.nasa.gov/image/PIA12235/PIA12235~large.jpg')
-  center/cover;
+  background:  url('https://images-assets.nasa.gov/image/PIA12235/PIA12235~large.jpg')
 
   box-shadow:
   0 0 60px rgba(255,90,40,0.5),
