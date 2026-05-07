@@ -208,10 +208,15 @@ section{
   color:#d7d7d7;
 }
 
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:25px;
+..gallery{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+
+  flex-wrap:wrap;
+
+  padding:40px 0;
 }
 
 .gallery img{
@@ -225,8 +230,16 @@ section{
   transition:0.4s;
 }
 
-.gallery img:hover{
-  transform:scale(1.03);
+..gallery img{
+  width:100%;
+  max-width:450px;
+  height:300px;
+
+  object-fit:cover;
+
+  border-radius:25px;
+
+  display:block;
 }
 
 .mission-cards{
