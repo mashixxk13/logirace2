@@ -1,133 +1,170 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Марс — Червона Планета</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARS PROJECT</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="stars"></div>
+<div class="bg"></div>
 
-<header>
-    <h1>Марс</h1>
-    <p>Таємнича червона планета Сонячної системи</p>
-    <a href="#about" class="btn">Дізнатися більше</a>
+<header class="hero">
+
+  <nav>
+    <div class="logo">MARS</div>
+
+    <ul>
+      <li><a href="#about">ПРО МАРС</a></li>
+      <li><a href="#facts">ФАКТИ</a></li>
+      <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+      <li><a href="#missions">МІСІЇ</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+
+    <div class="left">
+      <h1>МАРС</h1>
+
+      <h2>ЧЕРВОНА ПЛАНЕТА</h2>
+
+      <p>
+        Марс — четверта планета від Сонця
+        та один із найзагадковіших світів
+        у Сонячній системі.
+      </p>
+
+      <a href="#about" class="btn">
+        ДІЗНАТИСЯ БІЛЬШЕ
+      </a>
+    </div>
+
+    <div class="planet"></div>
+
+  </div>
+
 </header>
 
-<nav>
-    <a href="#about">Про Марс</a>
-    <a href="#facts">Факти</a>
-    <a href="#gallery">Галерея</a>
-    <a href="#missions">Місії</a>
-</nav>
+<section id="about" class="about">
 
-<section id="about">
-    <div class="card">
-        <h2>Про Марс</h2>
-        <p>
-            Марс — четверта планета від Сонця. Через свій червонуватий колір
-            її називають Червоною планетою. Марс має тонку атмосферу,
-            величезні вулкани, каньйони та полярні льодові шапки.
-        </p>
+  <div class="about-text glass">
 
-        <p>
-            Вчені вважають, що колись на Марсі була вода, а можливо навіть
-            існувало життя. Саме тому планету активно досліджують космічні місії.
-        </p>
-    </div>
+    <h2>ПРО МАРС</h2>
+
+    <p>
+      Марс називають Червоною планетою
+      через великий вміст оксиду заліза.
+    </p>
+
+    <p>
+      На Марсі є вулкани, каньйони,
+      полярні льодові шапки та сліди води.
+    </p>
+
+  </div>
+
+  <div class="about-image glass">
+    <img src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~large.jpg">
+  </div>
+
 </section>
 
 <section id="facts">
-    <h2 class="title">Цікаві факти</h2>
 
-    <div class="cards">
+  <h2 class="title">ЦІКАВІ ФАКТИ</h2>
 
-        <div class="fact-card">
-            <h3>Олімп</h3>
-            <p>
-                На Марсі знаходиться найбільший вулкан у Сонячній системі —
-                Олімп. Його висота приблизно 22 км.
-            </p>
-        </div>
+  <div class="cards">
 
-        <div class="fact-card">
-            <h3>Марсіанський день</h3>
-            <p>
-                Один день на Марсі триває 24 години 37 хвилин —
-                майже як на Землі.
-            </p>
-        </div>
+    <div class="card glass">
+      <h3>ОЛІМП</h3>
 
-        <div class="fact-card">
-            <h3>Температура</h3>
-            <p>
-                Взимку температура може падати до -140°C.
-            </p>
-        </div>
-
-        <div class="fact-card">
-            <h3>Супутники</h3>
-            <p>
-                У Марса є два супутники — Фобос і Деймос.
-            </p>
-        </div>
-
+      <p>
+        Найбільший вулкан у Сонячній системі.
+      </p>
     </div>
+
+    <div class="card glass">
+      <h3>МАРСІАНСЬКИЙ ДЕНЬ</h3>
+
+      <p>
+        Один день триває 24 години 37 хвилин.
+      </p>
+    </div>
+
+    <div class="card glass">
+      <h3>ТЕМПЕРАТУРА</h3>
+
+      <p>
+        Температура може падати до -140°C.
+      </p>
+    </div>
+
+    <div class="card glass">
+      <h3>СУПУТНИКИ</h3>
+
+      <p>
+        Марс має два супутники.
+      </p>
+    </div>
+
+  </div>
+
 </section>
 
 <section id="gallery">
-    <h2 class="title">Галерея</h2>
 
-    <div class="gallery">
+  <h2 class="title">ГАЛЕРЕЯ</h2>
 
-        <img src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~large.jpg" alt="Марс">
+  <div class="gallery">
 
-        <img src="https://mars.nasa.gov/system/resources/detail_files/25774_PIA23764-web.jpg" alt="Марс">
+    <img src="https://mars.nasa.gov/system/resources/detail_files/25774_PIA23764-web.jpg">
 
-        <img src="https://mars.nasa.gov/system/resources/detail_files/25042_PIA23707-320.jpg" alt="Марс">
+    <img src="https://mars.nasa.gov/system/resources/detail_files/25042_PIA23707-320.jpg">
 
-    </div>
+    <img src="https://images-assets.nasa.gov/image/PIA12235/PIA12235~large.jpg">
+
+  </div>
+
 </section>
 
 <section id="missions">
-    <div class="card">
-        <h2>Космічні місії</h2>
 
-        <div class="mission">
-            <h3>Curiosity</h3>
-            <p>
-                Марсохід NASA, який досліджує поверхню Марса з 2012 року.
-            </p>
-        </div>
+  <h2 class="title">КОСМІЧНІ МІСІЇ</h2>
 
-        <div class="mission">
-            <h3>Perseverance</h3>
-            <p>
-                Сучасний ровер, який шукає сліди давнього життя.
-            </p>
-        </div>
+  <div class="mission-cards">
 
-        <div class="mission">
-            <h3>Mars Express</h3>
-            <p>
-                Європейська місія для дослідження атмосфери та поверхні Марса.
-            </p>
-        </div>
+    <div class="mission glass">
+
+      <img src="https://mars.nasa.gov/system/resources/detail_files/25043_PIA23764-16.jpg">
+
+      <h3>Curiosity</h3>
+
+      <p>
+        Марсохід NASA для дослідження Марса.
+      </p>
 
     </div>
-</section>
 
-<section class="quote">
-    <h2>
-        “Марс — це наступний великий крок людства.”
-    </h2>
-</section>
+    <div class="mission glass">
 
-<footer>
-    <p>© 2026 | Сайт про Марс для конкурсу 🚀</p>
-</footer>
+      <img src="https://mars.nasa.gov/system/resources/detail_files/25679_PIA24420-web.jpg">
 
-</body>
-</html>
+      <h3>Perseverance</h3>
+
+      <p>
+        Сучасний ровер NASA.
+      </p>
+
+    </div>
+
+    <div class="mission glass">
+
+      <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2003/06/mars_express_orbit
