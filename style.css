@@ -1,1 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #070b1a, #130d21, #2b0d0d);
+    color: white;
+    overflow-x: hidden;
+}
+
+.stars{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.4;
+    z-index: -1;
+}
+
+header{
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    url('https://images-assets.nasa.gov/image/PIA12235/PIA12235~large.jpg')
+    center/cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 90px;
+    color: #ff5e3a;
+    text-shadow: 0 0 20px red;
+}
+
+header p{
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 15px 35px;
+    background: #ff5e3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: #ff2a00;
+}
+
+nav{
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #ff5e3a;
+}
+
+section{
+    padding: 80px 10%;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #ff5e3a;
+}
+
+.card{
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255,0,0,0.2);
+}
+
+.card p{
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.fact-card{
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(255,0,0,0.1);
+}
+
+.fact-card:hover{
+    transform: translateY(-10px);
+}
+
+.fact-card h3{
+    color: #ff5e3a;
+    margin-bottom: 15px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 20px;
+}
+
+.gallery img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery img:hover{
+    transform: scale(1.05);
+}
+
+.mission{
+    margin-top: 30px;
+}
+
+.mission h3{
+    color: #ff5e3a;
+    margin-bottom: 10px;
+}
+
+.quote{
+    text-align: center;
+    background: rgba(255,255,255,0.03);
+    padding: 100px 20px;
+}
+
+.quote h2{
+    font-size: 42px;
+    color: #ffb199;
+}
+
+footer{
+    background: black;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+}
