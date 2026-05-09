@@ -242,6 +242,32 @@ section{
   display:block;
 }
 
+.glass{
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    box-shadow:
+    0 0 30px rgba(255,90,40,0.15);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    transition:0.4s;
+}
+
+.glass:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 40px rgba(255,90,40,0.3);
+}
+
 .mission-cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
